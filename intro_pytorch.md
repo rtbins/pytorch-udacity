@@ -30,11 +30,16 @@ torch.manual_seed(7)
 
 #feature is 5 random normal variables
 features = torch.randn((1, 5))
-# creates a tensor with shape (1, 5), one row and five columns, that contains values randomly distributed according to the normal distribution with a mean of zero and standard deviation of one.
-
+'''
+creates a tensor with shape (1, 5), one row and five columns, 
+that contains values randomly distributed according to the normal 
+distribution with a mean of zero and standard deviation of one.
+'''
 weights torch.randn_like(features)
-# creates another tensor with the same shape as features, again containing values from a normal distribution.
-
+'''
+creates another tensor with the same shape as features, again 
+containing values from a normal distribution.
+'''
 biases = torch.randn((1, 1))
 #creates a single value from a normal distribution
 ```
