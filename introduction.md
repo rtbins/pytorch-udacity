@@ -22,7 +22,7 @@ pip3 install torchvision
 To an input a neural network multiply weights, add biases and pass it through an activation function to get an output (deterministic or stochastic). Output is a linear combination of weights and biases matrix. A tensors are n dimensional matrices.
 
 ```python
-sigmoid_fn(x) = 1 / (1 + torch.exp(-x))
+sigmoid_fn(x) = 1 ./ (1 + torch.exp(-x))
 ```
 
 When generating randomn numbers, we need to seed such that results can be reproduced consistently when the setup is rerun.
